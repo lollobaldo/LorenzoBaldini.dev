@@ -1,15 +1,18 @@
+/* eslint-disable no-unused-vars */
+import Typed from 'typed.js';
 
-require('normalize.css/normalize.css');
-require('./styles/index.scss');
+import Navbar from './js/navbar';
 
-document.addEventListener("DOMContentLoaded", () => {
+import Style from './styles/index.scss';
 
-    const pluginsTriggerElement = document.getElementById('plugins-trigger');
-    const pluginsElement = document.getElementById('plugins');
+// var Counters = require('./js/counters')
 
-    const pluginsVisibleClass = "splash-overview-plugins__list--visible";
-
-    pluginsTriggerElement.onclick = () => {
-        pluginsElement.classList.toggle(pluginsVisibleClass);
-    }
+// typed effect on spanner 1
+const typed = new Typed('#typed', {
+  stringsElement: '#typed-strings',
+  // NOTE: lower is higher
+  typeSpeed: 60,
+  backSpeed: 10,
+  // startDelay: 1000,
+  loop: true,
 });

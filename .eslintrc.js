@@ -3,9 +3,9 @@ module.exports = {
     es6: true,
     node: true,
     browser: true,
-    "jest/globals": true
+    // "jest/globals": true
   },
-  extends: 'airbnb',
+  extends: 'airbnb-base',
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -14,8 +14,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ["jest"],
+  // plugins: ["jest"],
   rules: {
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*webpack*.js"]}],
     'no-console': 'off',
   },
 };

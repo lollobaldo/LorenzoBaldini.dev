@@ -1,0 +1,6 @@
+.editorconfig
+FileZilla.xml
+/.vscode
+# .idea
+/node_modules
+# dist

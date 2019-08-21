@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import Typed from 'typed.js';
 
-import Navbar from './js/navbar';
+import Navbar from './components/Navbar';
 
+import W3css from './styles/w3.css';
 import Style from './styles/index.scss';
 
 // var Counters = require('./js/counters')

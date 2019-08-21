@@ -2,10 +2,9 @@
 
 /* Properties go in this order
  * content -> display -> position -> size -> border -> background -> inside
- *
 */
 
-@import 'imports/constants';
+@import 'constants';
 @import 'imports/timeline';
 @import 'imports/progress-bars';
 
@@ -57,48 +56,6 @@ body, html {
   padding: 64px;
   background-color: #fff;
   color: #000;
-}
-
-nav {
-  align-items: flex-start;
-  z-index: 100 !important;
-  padding: 24px 20%;
-  background-color: rgba(0,0,0,0);
-  font-weight: bold;
-  color: $primary-color;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-
-    &.active {
-      background:
-      linear-gradient(
-        to right,
-          transparent 0%,
-          orange 0%,
-          orange 50%,
-          transparent 50%)
-        left 16px bottom 0 /
-        100% 2px no-repeat,
-        rgba(0, 0, 0, 0)
-    }
-  }
-
-  a {
-    font-size: large;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
 }
 
 .nav-scroll {

@@ -12,13 +12,14 @@
 <link rel="apple-touch-icon" href="icons/big-favicon.png"> -->
 
 <!-- W3CSS(Google fonts, Font awesome) -->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!-- <link rel="stylesheet" href="./src/styles/index.scss"> -->
+<!-- <link rel="stylesheet" href="./src/styles/w3.css"> -->
+<!-- <link rel="stylesheet" href="./src/styles/index.scss" data-href="./src/styles/index.scss"> -->
 
 <body>
 
 <!-- Navbar (sit on top) -->
-<nav class="w3-top w3-bar w3-xlarge">
+<!-- Use 'nav-scroll' class on loading so it is readable without JS -->
+<nav class="w3-top w3-bar w3-xlarge nav-scroll">
   <!-- Have to use <ul> because of the ScrollSpy -->
   <ul>
     <li class="w3-bar-item active">
@@ -74,7 +75,7 @@
   <div class="w3-container w3-half">
     <div class="w3-container w3-half">
         <!-- <img src="src/assets/images/try_me_150x150.jpeg" alt="me" /> -->
-        <img src="/src/assets/images/pp.jpeg" width="150px" alt="me" />
+        <img src="./assets/images/pp.jpeg" width="150px" alt="me" />
     </div>
     <div class="w3-container w3-half">
       <p>Lorenzo Baldini</p>
@@ -224,9 +225,9 @@
 <link rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 <!-- jQuery -->
-<script defer
+<!-- <script defer
   src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
+</script> -->
 <!-- build:js js/lib.js -->
 <!-- <script defer src="/js/index.js"></script> -->
 <!-- endbuild -->

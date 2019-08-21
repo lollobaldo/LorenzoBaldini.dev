@@ -5,6 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: './src/index.js',
+  resolve: {
+    modules: [path.resolve(__dirname, './src'), 'node_modules'],
+    alias: {
+      src: path.resolve(__dirname, './src'),
+    },
+  },
   devServer: {
     port: 8080,
     contentBase: path.join(__dirname, 'dist'),

@@ -16,7 +16,18 @@ module.exports = {
   },
   // plugins: ["jest"],
   rules: {
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*webpack*.js"]}],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": [
+      "**/*.test.ts",
+      "**/*webpack*.js",
+      "**/*postcss*.js",
+    ]}],
     'no-console': 'off',
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.dev.js"
+      }
+    }
   },
 };

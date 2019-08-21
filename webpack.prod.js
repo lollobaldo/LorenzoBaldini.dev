@@ -12,6 +12,12 @@ const buildPath = path.resolve(__dirname, 'dist');
 module.exports = {
   devtool: 'source-map',
   entry: './src/index.js',
+  resolve: {
+    modules: [path.resolve(__dirname, './src'), 'node_modules'],
+    alias: {
+      src: path.resolve(__dirname, './src'),
+    },
+  },
   output: {
     filename: '[name].[hash:20].js',
     path: buildPath,
@@ -78,6 +84,9 @@ module.exports = {
         // HTML LOADER
         test: /\.html$/,
         loader: 'html-loader',
+        options: {
+          minimize: true,
+        },
       },
       {
         // Load all icons
